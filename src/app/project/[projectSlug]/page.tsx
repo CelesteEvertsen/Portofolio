@@ -19,7 +19,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ projec
       <Image className={style.image} src={project.image} alt={project.title} width={600} height={600} />
       <p>{project.content}</p>
       <section>
-        <div>{project.githubLink && <Link className={style.link} href={project.githubLink} target="_blank"><FaGithub /> Github</Link>}</div>
+        <div>{project.githubLink && <Link className={style.link} href={project.githubLink} target="_blank"><FaGithub /> GitHub</Link>}</div>
         <div>{project.websiteLink && <Link className={style.link} href={project.websiteLink} target="_blank"><SiNetlify /> Website</Link>}</div>
        
       </section>

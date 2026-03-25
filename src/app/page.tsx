@@ -17,8 +17,8 @@ export default function HomePage() {
     image="/gif.gif"
     name="Education"
     title="Education"
-    subTitle="Fullstack - Nutritionist - CloudSecurity - Digital assurance & management"
-    content="I have a nice backpack with education, And I am still trying to fill that bag up. I am no jet a fullstack badie, but I am starting my backend journy fall 2026. While I was on my last year in fronend developer, I took a course in Clodu security at Kristiania College, that course Open my interest in Digital assurance and management, this will be a Bachelor degree that will start fall 2026  "
+    subTitle="Full-Stack - Nutritionist - Cloud Security - Digital Assurance & Management"
+    content="I have a solid educational background, and I am still working to build on it. I am not yet a full-stack developer, but I am starting my backend journey in fall 2026. During my final year in frontend development, I took a course in Cloud Security at Kristiania College. That course sparked my interest in Digital Assurance and Management, which will be my bachelor's degree starting in fall 2026."
   />
   <MyProjectComponent/>
   <About />

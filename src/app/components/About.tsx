@@ -13,7 +13,7 @@ export default function AboutComponent() {
       <article className={style.contentText}>
         <p>
           Amazing that you’re still here with me. So, as you can tell, my name
-          is Celeste Evertsen. As a female, I will not disclose my age rude of
+          is Celeste Evertsen. As a woman, I will not disclose my age. Rude of
           you to ask.
         </p>
         <p>
@@ -48,7 +48,7 @@ export default function AboutComponent() {
         <p>A determined work ethic, a love for learning,
         a sprinkle of chaos, and the ability to make even the most boring tasks
         fun. If you’re looking for someone who shows up, tries hard, and laughs
-        through the struggle</p>
+        through the struggle,</p>
         <span>hi, it’s me.</span>
       </article>
        <p className={style.signature + ' ' + islandMoments.className}>- Celeste Evertsen</p>
