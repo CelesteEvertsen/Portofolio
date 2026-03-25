@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  margin: 2rem 2rem;
+  margin: 2rem 0rem;
   line-height: 1.5;
   h1{
     font-size: 5rem;
@@ -30,6 +30,9 @@
   .listTitle{
     font-size:1.2rem;
     font-weight: bold;
+  }
+   .list{
+    margin-left: 1rem;
   }
  .signature {
     font-size: 1.5rem;
@@ -62,8 +65,7 @@
 @media (max-width: 768px) {
   .aboutSection {
     height: auto;
-    padding: 2rem 1rem;
-    min-height: 100vh;
+    padding: 0rem 0rem;
   }
 
   .aboutSection h1 {
@@ -83,11 +85,10 @@
   }
 
   .contentText {
-    width: 100%;
-    max-width: 100%;
+    width: 100vw;
     font-size: 0.95rem;
-    margin: 0 1rem;
   }
+ 
 
   .signature {
     font-size: 1.5rem;
@@ -99,7 +100,7 @@
 }
 
 /* Små mobiler */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .aboutSection h1 {
     font-size: 2rem;
   
@@ -123,3 +124,4 @@
     font-size: 1.2rem;
   }
 }
+ */

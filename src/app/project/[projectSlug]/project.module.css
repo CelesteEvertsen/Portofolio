@@ -48,3 +48,11 @@
   margin-inline: 1rem;
   object-fit: contain;
 }
+
+
+/* Mobil */
+@media (max-width: 768px){
+  .section{
+    width: 100vw;
+  }
+}

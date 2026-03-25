@@ -34,7 +34,7 @@ export default function AboutComponent() {
         <br />
         <p className={style.listTitle}>I’m basically a mix of:
         </p>
-        <ul>
+        <ul className={style.list}>
           <li>Tech‑girly in training</li>
           <li>
             Nutritionist who loves to help people that want to improve their

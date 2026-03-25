@@ -15,6 +15,7 @@
   h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
+  
   }
   h2 {
     font-size: 1.5rem;
@@ -73,6 +74,7 @@
     flex-direction: column;
     height: auto;
     padding-bottom: 4rem;
+ 
   }
 
   .picture {
@@ -85,15 +87,15 @@
   }
 
   .content {
-    width: 100%;
-    margin-left: 0;
-    padding: 2rem;
-    align-content: unset;
+    width: 100vw;
+    margin: 0;
+    padding: 0rem;
   }
 
   .content h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 0.5rem;
+  width: 100vw;
   }
 
   .content h2 {
@@ -132,8 +134,9 @@
 
   .content {
     width: 100%;
+    height: auto;
     margin-left: 0;
-    padding: 2rem;
+    padding: 0rem 0.5rem;
     align-content: unset;
   }
 
