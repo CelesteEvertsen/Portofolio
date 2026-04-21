@@ -1,0 +1,13 @@
+.link{
+    text-decoration: none;
+    background-color: transparent;
+}
+.button{
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0 0 1rem;
+    border-radius: 20px;
+    border: 1.5px solid var(--primary-color);
+    color: var(--primary-color);
+    cursor: pointer;
+}

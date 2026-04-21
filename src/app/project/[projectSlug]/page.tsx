@@ -3,7 +3,9 @@ import Image from "next/image";
 import style from './project.module.css'
 import { FaGithub } from 'react-icons/fa'
 import { SiNetlify } from "react-icons/si";
+import MyProjectComponent from "@/app/components/Project/Project"
 import Link from "next/link";
+import BackToButton from "@/app/components/Buttons/Backto";
 
 export default async function ProjectPage({ params }: { params: Promise<{ projectSlug: string }> }) {
   const { projectSlug } = await params;
@@ -13,7 +15,10 @@ export default async function ProjectPage({ params }: { params: Promise<{ projec
 
   return (
     <>
-    <Link className={style.backTo} href="/">Back to Projects</Link>
+    {/* <Link className={style.backTo} href="/">Back to Projects</Link> */}
+
+    <BackToButton title="Back to Projects" href="/" type="button" />
+    
     <section className={style.section}>
       <h1 className={style.title}>{project.title}</h1>
       <Image className={style.image} src={project.image} alt={project.title} width={600} height={600} />
@@ -25,6 +30,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ projec
       </section>
 
     </section>
+    <MyProjectComponent title="See more Projects" />
     </>
   );
 }

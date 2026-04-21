@@ -4,12 +4,15 @@ import style from './Project.module.css'
 import Link from 'next/link'
 import {item} from '../../../data/project'
 
+type Project ={
+  title: string;
+}
 
 
-export default function MyProjectComponent() {
+export default function MyProjectComponent({ title }:Project) {
   return (
     <section className={style.container}>
-      <h1 className={style.h1}>My Projects</h1>
+      <h1 className={style.h1}>{title}</h1>
       <section className={style.imageContainer}>
         {item.map((project, index) => (
           <Link key={`${index}-${project.slug}`} href={`/project/${project.slug}`}>
