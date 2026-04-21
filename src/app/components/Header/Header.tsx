@@ -55,18 +55,16 @@ export default function Header({
     };
   }, []);
   return (
-    <header className={styles.header} ref={headerRef}>
-      <picture className={styles.picture}>
+    <header className={styles.headerContainer} ref={headerRef}>
         <Image  className={styles.image}
           src={image}
           alt={name}
           width={600}
           height={600}
         />
-      </picture>
       <section className={styles.content}>
         <h1>
-          {name} - {title}
+          {name} {title}
         </h1>
         <h2>{subtitle}</h2>
         <p>{content}</p>

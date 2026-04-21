@@ -1,0 +1,33 @@
+/* Desktop */
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  margin: 2rem 3rem 0 3rem;
+  padding: 0.5rem 2rem;
+  .navList {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+  }
+}
+
+@media (max-width: 1024px) {
+    .navContainer{
+        border-top: none;
+        margin: 0rem 1rem 2rem 1rem;
+       padding: 2rem 1.5rem;
+    }
+  .navList {
+    display: none;
+    li {
+      display: none;
+    }
+  }
+}
