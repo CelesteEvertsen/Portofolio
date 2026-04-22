@@ -6,8 +6,8 @@
   align-items: center;
   padding: 0.5rem 2rem;
 
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.251);
+  border-top: 1px solid rgba(0, 0, 0, 0.251);
   margin: 2rem 3rem 0 3rem;
   padding: 0.5rem 2rem;
   .navList {
@@ -16,6 +16,22 @@
     gap: 2rem;
     list-style: none;
   }
+}
+.navLink {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 200;
+  padding: 0.5rem 1rem;
+}
+.navList :hover {
+  background: #eddd53;
+  background: radial-gradient(
+    circle,
+    rgba(237, 221, 83, 0.5) 0%,
+    rgba(255, 255, 255, 1) 80%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 /* Nettbrett (768px – 1024px) */

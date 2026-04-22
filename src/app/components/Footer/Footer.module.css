@@ -4,8 +4,8 @@
   flex-direction: row;
   justify-content: space-around;
   background-color: #f8f8f8;
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.251);
+  border-top: 1px solid rgba(0, 0, 0, 0.251);
    margin: 2rem 3rem 0 3rem;
   padding: 1.5rem 2rem;
 }
@@ -43,13 +43,11 @@
 
 /* Nettbrett (768px – 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
-  .footer {
-    width: 100%;
+  .footer{
+    margin: 0 auto;
   }
   .footerContainer {
-    width: 100%;
     justify-content: space-around;
-    margin: 0;
     padding: 1.5rem 2rem;
   }
 }
