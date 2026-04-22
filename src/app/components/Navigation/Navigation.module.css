@@ -18,12 +18,21 @@
   }
 }
 
-@media (max-width: 1024px) {
-    .navContainer{
-        border-top: none;
-        margin: 0rem 1rem 2rem 1rem;
-       padding: 2rem 1.5rem;
-    }
+/* Nettbrett (768px – 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logo {
+    width: 250px;
+    height: 65px;
+  }
+}
+
+/* Mobil */
+@media (max-width: 768px) {
+  .navContainer {
+    border-top: none;
+    margin: 0rem 1rem 2rem 1rem;
+    padding: 2rem 1.5rem;
+  }
   .navList {
     display: none;
     li {
@@ -34,5 +43,5 @@
     margin: 0;
     width: 300px;
     height: 70px;
-  } 
+  }
 }

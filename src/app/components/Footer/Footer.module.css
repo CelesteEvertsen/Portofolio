@@ -1,77 +1,64 @@
-.footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    border-top: #58310141 solid 1px;
-    box-shadow: 0px -2px 5px rgba(88, 49, 1, 0.1);
-h3{
-    font-size: 4rem;
-    font-weight: lighter;
-    text-align: center;
+
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+   margin: 2rem 3rem 0 3rem;
+  padding: 1.5rem 2rem;
 }
 
-div{
-    margin: 1rem;
+.menu,
+.social,
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  h3 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.579);
+    font-weight: 400;
+  }
 }
-section{
-    font-size: 3.5rem;
-    display: flex;
-    gap: 2rem;
-    margin: 1rem;
-}
+.list {
+  list-style: none;
+  padding: 0;
+  color: black;
+  li {
+    padding-bottom: 1rem;
+  
 
+  }
 }
-.link{
-    font-size: 2.5rem;
-    color: #583101 ;
-    display: flex;
-    align-items: center;
-}.link:hover{
-    color: black;
+.link {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
 }
 .copyright{
-    font-size: 0.8rem;
-    width: 99%;
-    text-align: right;
-   
+  margin: 1rem ;
 }
 
-@media (max-width: 768px) {
+/* Nettbrett (768px – 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
   .footer {
-    padding: 15px;
+    width: 100%;
   }
-
-  .footer h3 {
-    font-size: 2rem;
-  }
-
-  .footer section {
-    font-size: 1.8rem;
-    gap: 1.5rem;
-  }
-
-  .copyright {
-    font-size: 0.65rem;
+  .footerContainer {
+    width: 100%;
+    justify-content: space-around;
+    margin: 0;
+    padding: 1.5rem 2rem;
   }
 }
 
-@media (max-width: 480px) {
-  .footer {
-    padding: 10px;
-  }
-
-  .footer h3 {
-    font-size: 1.5rem;
-  }
-
-  .footer section {
-    font-size: 1.4rem;
-    gap: 1rem;
-  }
-
-  .copyright {
-    font-size: 0.55rem;
+/* Mobil */
+@media (max-width: 767px) {
+  .footerContainer {
+    justify-content: space-between;
+    margin: 2rem 1rem 0 1rem;
+    padding: 2.5rem 1rem;
   }
 }

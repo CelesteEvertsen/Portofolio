@@ -1,28 +1,62 @@
-import { FaGithub } from 'react-icons/fa'
-import { FaLinkedin } from 'react-icons/fa'
-import Link from 'next/link'
-import style from './Footer.module.css'
+import Link from "next/link";
+import style from "./Footer.module.css";
 
 export default function Footer() {
   return (
-    <>
     <footer className={style.footer}>
-      <div>
-        <h3>Where am I hiding?</h3>
-        <h3>Right here</h3>
+      <div className={style.footerContainer}>
+        <div className={style.menu}>
+          <h3>Menu</h3>
+          <ul className={style.list}>
+            <li>
+              <Link className={style.link} href="#about">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link className={style.link} href="#projects">
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link className={style.link} href="#contact">
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className={style.social}>
+          <h3>Socials</h3>
+          <ul className={style.list}>
+            <li>
+              <Link
+                className={style.link}
+                href="https://github.com/CelesteEvertsen"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </Link>
+            </li>
+            <li>
+              <Link
+                className={style.link}
+                href="https://www.linkedin.com/in/celeste-evertsen-a860b734b/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className={style.projects}>
+          <h3>Projects</h3>
+        </div>
       </div>
-
-      <section>
-        <Link className={style.link} href="https://github.com/CelesteEvertsen" target="_blank" rel="noopener noreferrer">
-          <FaGithub />
-        </Link>
-        <Link className={style.link} href="https://www.linkedin.com/in/celeste-evertsen-a860b734b/" target="_blank" rel="noopener noreferrer">
-          <FaLinkedin />
-        </Link>
-      </section>
-     
+      <div className={style.copyright}>
+        &copy; {new Date().getFullYear()} Celeste Evertsen. All rights reserved.
+      </div>
     </footer>
-     <p className={style.copyright}>© 2024 Celeste Evertsen. All rights reserved.</p>
-    </>
-  )
+  );
 }

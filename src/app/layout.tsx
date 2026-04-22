@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css"
-/* import Footer from "./components/Footer/Footer"; */
+import Footer from "./components/Footer/Footer";
 import Navigation from "./components/Navigation/Navigation";
 
 const heartIcon =
@@ -28,7 +28,7 @@ export default function RootLayout({
       <body>
         <Navigation />
         {children}
-       {/*   <Footer/> */}
+         <Footer/>
       </body>
      
     </html>
