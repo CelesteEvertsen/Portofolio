@@ -52,6 +52,9 @@ export default function Footer() {
         </div>
         <div className={style.projects}>
           <h3>Projects</h3>
+          <Link className={style.link} href="/portfolio">
+            Portofolio
+          </Link>
         </div>
       </div>
       <div className={style.copyright}>
