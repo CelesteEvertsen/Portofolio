@@ -46,9 +46,11 @@
     height: auto;
     margin: 0 2rem;
     padding: 0 1.5rem 4rem 1.5rem;
+    gap: 2rem;
   }
 
   .image {
+    margin-left: 0;
     width: 40rem;
     height: 40rem;
     border-radius: 20px;
@@ -63,7 +65,10 @@
   }
 
   .content h1 {
-    font-size: 5rem;
+    margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
     margin-bottom: 0;
     line-height: 1.5;
     order: 1;
@@ -83,7 +88,6 @@
     width: 100%;
     font-size: 1.5rem;
     order: 4;
-    border: 1px solid rgba(0, 0, 0, 0.251);
   }
 }
 
