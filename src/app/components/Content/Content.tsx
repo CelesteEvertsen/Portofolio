@@ -18,9 +18,9 @@ export default function ContentComponent({
     <>
       <section className={styles.contentSection}>
         <section className={styles.content}>
-          <h1>{title}</h1>
-          <h2>{subTitle}</h2>
-          <p>{content}</p>
+          <h1 className={styles.title}>{title}</h1>
+          <h2 className={styles.subTitle}>{subTitle}</h2>
+          <p className={styles.contentText}>{content}</p>
         </section>
         <section className={styles.imageSection}>
           <picture className={styles.picture}>

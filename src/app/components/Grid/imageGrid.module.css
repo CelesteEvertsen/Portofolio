@@ -41,16 +41,14 @@
 .small4 {
   grid-area: small4;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+    .imageGridContainer{
+    width: 100%;
 
-@media (max-width: 900px) {
+    }
   .imageGrid {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 220px);
-    grid-template-areas:
-      "center"
-      "small1"
-      "small2"
-      "small3"
-      "small4";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 120px);
+  
   }
 }

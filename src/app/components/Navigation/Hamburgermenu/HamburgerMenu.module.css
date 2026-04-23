@@ -1,0 +1,98 @@
+.hamburgerNav {
+  position: relative;
+  display: none;
+}
+
+.hamburgerIcon,
+.closingBtn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 8px;
+  color: var(--secondary-900);
+}
+
+.iconHidden {
+  display: none;
+}
+
+.hamburgerIcon svg,
+.closingBtn svg {
+  width: 24px;
+  height: 24px;
+}
+
+ .closingBtn {
+	position: fixed;
+	top: 1.5rem;
+	right: 1.5rem;
+	z-index: 110;
+ }
+
+.btnClosed {
+  display: none;
+}
+
+ .hamburgerMenu {
+	position: fixed;
+	inset: 0;
+	background: whitesmoke;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: translateX(100%);
+	opacity: 0;
+	pointer-events: none;
+	transition: transform 0.3s ease, opacity 0.3s ease;
+	z-index: 100;
+ }
+
+.menuOpen {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.hamburgerMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hamburgerMenu li {
+  padding: 0;
+  border-bottom: none;
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.hamburgerMenu a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.becomeMemberButton {
+  display: block;
+  padding: 0 1.25rem 1.25rem;
+}
+
+.becomeMemberButton button {
+  width: 100%;
+  border: none;
+  padding: 0.9rem 1.5rem;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .hamburgerNav {
+    display: block;
+  }
+}

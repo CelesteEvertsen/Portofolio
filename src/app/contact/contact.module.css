@@ -1,0 +1,19 @@
+.contactContainer {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 2rem;
+  gap: 2rem;
+}
+.link {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid black;
+}
+.link:hover {
+  font-weight: 500;
+  border-bottom: 1px solid var(--background-color);
+}

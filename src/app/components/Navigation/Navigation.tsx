@@ -1,8 +1,19 @@
+'use client'
 import Link from "next/link";
 import style from "./Navigation.module.css";
 import Image from "next/image";
+import HamburgerMenu from "./Hamburgermenu/Hamburger";
+import { useState } from "react";
 
 export default function Navigation() {
+   const [isOpen, setIsOpen] = useState(false)
+  const toggleMenu = () => {
+    setIsOpen((prev) => !prev)
+  }
+
+  const closeMenu = () => {
+    setIsOpen(false)
+  }
   return (
     <nav className={style.navContainer}>
       <Link href="/">
@@ -36,6 +47,7 @@ export default function Navigation() {
           </Link>
         </li>
       </ul>
+      <HamburgerMenu isOpen={isOpen} onToggle={toggleMenu} onClose={closeMenu} />
     </nav>
   );
 }

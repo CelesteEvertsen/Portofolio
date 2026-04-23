@@ -8,6 +8,7 @@
 .content {
   margin: 2rem auto 0 auto;
   width: 50rem;
+
   h1{
     font-size: 4rem;
     margin-bottom: 2rem;
@@ -28,8 +29,36 @@
 
 /* Nettbrett (768px – 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
+  .contentSection {
+    flex-direction: column;
+    gap: 0;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .content {
+    display: contents;
+  }
+  .title {
+   margin-left: 1rem;
+    order: 1;
+  }
+  .subTitle {
+    order: 3;
+  }
+  .contentText {
+    order: 4;
+  }
+ .picture{
+  margin-left: 0;
+ }
+  .imageSection {
+    order: 2;
+  }
 }
 
 /* Mobil */
 @media (max-width: 768px) {
+  .picture {
+    display: none;
+  }
 }
