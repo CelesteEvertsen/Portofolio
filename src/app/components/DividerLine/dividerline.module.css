@@ -1,0 +1,5 @@
+.dividerLine {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.251);
+  margin: 2rem 3rem 0 3rem;
+  padding: 0.5rem 2rem;
+}

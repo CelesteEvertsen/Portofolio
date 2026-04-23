@@ -1,0 +1,23 @@
+.nav{
+    display: flex;
+    justify-content: center;
+    height: 5rem;/* Brukes for å unngå at innholde under navigasjon flytter på seg ved hover */
+}
+.navList{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    width: 20rem;
+
+  
+    li{
+        font-size: 1.5rem;
+    }
+    li:hover{
+        border-bottom: 1px solid black;
+    }
+}
+
+

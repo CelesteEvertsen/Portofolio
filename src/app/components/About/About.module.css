@@ -42,8 +42,7 @@
   font-weight: 300;
   font-family: var(--font-inter), sans-serif;
 }
-.list {
-  margin-left: 1rem;
+.list{
 list-style: none;
 padding: 0;
 margin: 0;
@@ -51,6 +50,7 @@ margin: 0;
 li{
 padding-bottom: 1rem;
 position: relative;
+
 }
 }
 
@@ -58,6 +58,7 @@ position: relative;
 content: "⁠♡";
 position: absolute;
 left: -1rem;
+
 
 }
 .signature {

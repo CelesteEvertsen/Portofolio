@@ -1,0 +1,56 @@
+.imageGridContainer {
+  width: 800px;
+  margin: 1rem auto;
+}
+
+.imageGrid {
+  display: grid;
+  grid-template-columns: 1fr 2.2fr 1fr;
+  grid-template-rows: repeat(3, minmax(180px, 240px));
+  grid-template-areas:
+    "small1 center small3"
+    "small2 center small4";
+    gap: 0.2rem;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card :global(img) {
+  object-fit: cover;
+}
+
+.small1 {
+  grid-area: small1;
+}
+
+.small2 {
+  grid-area: small2;
+}
+
+.center {
+  grid-area: center;
+}
+
+.small3 {
+  grid-area: small3;
+}
+
+.small4 {
+  grid-area: small4;
+}
+
+@media (max-width: 900px) {
+  .imageGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 220px);
+    grid-template-areas:
+      "center"
+      "small1"
+      "small2"
+      "small3"
+      "small4";
+  }
+}

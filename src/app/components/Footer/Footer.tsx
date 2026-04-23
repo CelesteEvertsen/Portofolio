@@ -9,17 +9,17 @@ export default function Footer() {
           <h3>Menu</h3>
           <ul className={style.list}>
             <li>
-              <Link className={style.link} href="#about">
+              <Link className={style.link} href="/about">
                 About
               </Link>
             </li>
             <li>
-              <Link className={style.link} href="#projects">
-                Projects
+              <Link className={style.link} href="/portfolio">
+                Portofolio
               </Link>
             </li>
             <li>
-              <Link className={style.link} href="#contact">
+              <Link className={style.link} href="/contact">
                 Contact
               </Link>
             </li>
