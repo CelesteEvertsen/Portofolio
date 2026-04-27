@@ -21,7 +21,7 @@ export default function Header({
       <Image
         className={styles.image}
         src={image}
-        alt={name}
+        alt={`${name} profile picture`}
         width={600}
         height={600}
       />

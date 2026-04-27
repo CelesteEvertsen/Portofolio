@@ -20,7 +20,7 @@ export default function Navigation() {
       <Link href="/">
         <Image
           src="/CE-logo-x1.png"
-          alt="Celeste Evertsen"
+          alt="Celeste Evertsen logo"
           width={400}
           height={100}
           className={style.logo}

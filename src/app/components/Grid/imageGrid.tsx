@@ -8,7 +8,7 @@ export default function ImageGrid() {
         <div className={`${style.card} ${style.small1}`}>
           <Image
             src="/yoksel-zok-Em76WMintrk-unsplash.jpg"
-            alt="Small image 1"
+            alt="pink flowers"
             fill
             sizes="(max-width: 900px) 100vw, 20vw"
           />
@@ -17,7 +17,7 @@ export default function ImageGrid() {
         <div className={`${style.card} ${style.small2}`}>
           <Image
             src="/laura-adai-KPG5nwVPMbo-unsplash.jpg"
-            alt="Small image 2"
+            alt="pink flowers type Syringa vulgaris"
             fill
             sizes="(max-width: 900px) 100vw, 20vw"
           />
@@ -26,7 +26,7 @@ export default function ImageGrid() {
         <div className={`${style.card} ${style.center}`}>
           <Image
             src="/theo-laflamme-yg24LApTKP4-unsplash.jpg"
-            alt="Large center image"
+            alt="flower"
             fill
             sizes="(max-width: 900px) 100vw, 40vw"
           />

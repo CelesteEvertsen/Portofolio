@@ -25,17 +25,27 @@
     margin-bottom: 0.5rem;
     width: 45rem;
     line-height: 1.7;
+   
   }
   h2 {
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+     width: 45rem;
     margin-bottom: 1rem;
+   
+  }
+  h3{
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.7;
+    width: 45rem;
+    
   }
   p {
     font-weight: 200;
     font-size: 1.2rem;
     line-height: 1.7;
-    width: 80%;
+   
   }
 }
 
@@ -99,6 +109,7 @@
     margin: 0 auto;
     padding: 0;
     gap: 0;
+    height: max-content;
   }
 
   .image {

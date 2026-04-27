@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css"
-/* import Footer from "./components/Footer/Footer"; */
-/* import Navigation from "./components/Navigation/Navigation"; */
+import Footer from "./components/Footer/Footer";
+import Navigation from "./components/Navigation/Navigation";
 
 const heartIcon =
   "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9D%A4%EF%B8%8F%3C/text%3E%3C/svg%3E";
@@ -26,9 +26,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <body>
-      {/*   <Navigation /> */}
+        <Navigation />
         {children}
-        {/*  <Footer/> */}
+         <Footer/>
       </body>
      
     </html>
