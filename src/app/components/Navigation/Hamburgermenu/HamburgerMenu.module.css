@@ -1,6 +1,7 @@
 .hamburgerNav {
   position: relative;
   display: none;
+   box-sizing: border-box;
 }
 
 .hamburgerIcon,
@@ -47,7 +48,7 @@
 	opacity: 0;
 	pointer-events: none;
 	transition: transform 0.3s ease, opacity 0.3s ease;
-	z-index: 100;
+	z-index: 1;
  }
 
 .menuOpen {
@@ -79,17 +80,6 @@
   display: block;
 }
 
-.becomeMemberButton {
-  display: block;
-  padding: 0 1.25rem 1.25rem;
-}
-
-.becomeMemberButton button {
-  width: 100%;
-  border: none;
-  padding: 0.9rem 1.5rem;
-  font-size: 0.95rem;
-}
 
 @media (max-width: 768px) {
   .hamburgerNav {

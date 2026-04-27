@@ -27,9 +27,10 @@ export default function Header({
       />
       <section className={styles.content}>
         <h1>
-          {name} {title}
+          {name}
         </h1>
-        <h2>{subtitle}</h2>
+        <h2> {title}</h2>
+        <h3>{subtitle}</h3>
         <p>{content}</p>
       </section>
     </header>

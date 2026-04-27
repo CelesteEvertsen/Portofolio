@@ -5,6 +5,7 @@ import Image from "next/image";
 import HamburgerMenu from "./Hamburgermenu/Hamburger";
 import { useState } from "react";
 
+
 export default function Navigation() {
    const [isOpen, setIsOpen] = useState(false)
   const toggleMenu = () => {
@@ -48,6 +49,7 @@ export default function Navigation() {
         </li>
       </ul>
       <HamburgerMenu isOpen={isOpen} onToggle={toggleMenu} onClose={closeMenu} />
+   
     </nav>
   );
 }

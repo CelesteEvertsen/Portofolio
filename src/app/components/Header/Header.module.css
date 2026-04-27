@@ -96,17 +96,17 @@
 @media (max-width: 767px) {
   .headerContainer {
     flex-direction: column;
-    margin: 0 1rem;
-    padding: 0 1rem;
+    margin: 0 auto;
+    padding: 0;
     gap: 0;
-    width: auto;
   }
 
   .image {
-    width: 25rem;
+    width: 90%;
     height: 25rem;
     border-radius: 20px;
-    order: 2;
+    order: 3;
+    margin: 0;
   }
 
   .content {
@@ -115,28 +115,32 @@
 
   .content h1 {
     font-size: 2.5rem;
+    font-weight: 200;
     order: 1;
-    width: 25rem;
-    margin: 0 0 1.5rem 0;
+    width: 90%;
+    margin: 0;
     padding: 0;
   }
 
   .content h2 {
     font-size: 2rem;
-    font-weight: 300;
-    width: 25rem;
-    margin: 1rem 0 1.5rem 0;
+    width: 90%;
+    order: 2;
+    font-weight: 200;
+  }
+  .content h3 {
+    width: 90%;
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin: 0.5rem 0;
     padding: 0;
-    order: 3;
-    display: none;
+    order: 4;
   }
 
   .content p {
     font-weight: 200;
     font-size: 1rem;
-    width: 25rem;
-    order: 3;
-    text-align: center;
-    margin-top: 2rem;
+    order: 5;
+    width: 90%;
   }
 }
