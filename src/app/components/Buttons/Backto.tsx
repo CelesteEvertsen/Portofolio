@@ -9,9 +9,12 @@ type BackToButton = {
 
 export default function BackToButton({ title, href, type }: BackToButton) {
   return (
+    <div className={style.container}>
+   
     <Link className={style.link} href={href}>
       {" "}
       <button className={style.button} type={type}>{title}</button>
     </Link>
+     </div>
   );
 }

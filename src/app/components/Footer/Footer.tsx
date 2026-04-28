@@ -9,6 +9,11 @@ export default function Footer() {
           <h3>Menu</h3>
           <ul className={style.list}>
             <li>
+              <Link className={style.link} href="/">
+                Home
+              </Link>
+            </li>
+            <li>
               <Link className={style.link} href="/about">
                 About
               </Link>

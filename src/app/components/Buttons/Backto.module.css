@@ -1,13 +1,21 @@
-.link{
-    text-decoration: none;
-    background-color: transparent;
+.link {
+  text-decoration: none;
+  background-color: transparent;
 }
-.button{
-    background-color: transparent;
-    padding: 0.5rem 1rem;
-    margin: 1rem 0 0 1rem;
-    border-radius: 20px;
-    border: 1.5px solid var(--primary-color);
-    color: var(--primary-color);
-    cursor: pointer;
+.button {
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0 0 2.5rem;
+  border-radius: 20px;
+  border-bottom: 1.5px solid black;
+  color: black;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    margin: 0 auto;
+    width: 80%;
+  }
 }
