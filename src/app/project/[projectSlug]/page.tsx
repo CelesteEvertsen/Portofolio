@@ -33,6 +33,25 @@ export default async function ProjectPage({
           height={600}
         />
         <p>{project.content}</p>
+        <div>
+          {project.ekstraImage && (
+            <Image
+          className={style.image}
+          src={project.ekstraImage}
+          alt={project.title}
+          width={600}
+          height={600}
+        />
+          )}
+          {project.content2 && (
+            project.content2.map((p,index)=>(
+              <div key={index}>
+                <p>{p.paragraf1}</p>
+                <p>{p.paragraf2}</p>
+              </div>
+            ))
+          )}
+        </div>
         <section>
           <div>
             {project.githubLink && (
