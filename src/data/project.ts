@@ -75,8 +75,18 @@ export const item: Project[] = [
     description: "Practice project for API calls and React components",
     content:
       "This is one of my first projects that introduced me to React. I learned how to use useState and how HTML is used in React versus JavaScript. I have to say that you save a lot of time by not having to write document.getElementById etc. I deployed this project on Netlify, so it is possible for you as a reader to try it out. If you are interested in seeing the code, I have also added a GitHub link.",
-    
+
     githubLink: "https://github.com/CelesteEvertsen/PokeApi",
     websiteLink: "https://pokeapi-ce.netlify.app/",
+  },
+  {
+    slug: "NST",
+    image: "/NSTHome.png",
+    alt: "NST Home page",
+    title: "NST website",
+    description: "Profetional website for Norwegian sporttech",
+    content:
+      "This project was developed in collaboration with Norwegian Sport Tech and focused on exploring how technology can support innovation within the sports and health industry. The goal was to identify user needs, analyze challenges, and create a digital solution that delivers value through improved accessibility, usability, and user experience. Throughout the project, I worked with research, planning, design, and development, applying modern web development principles and user-centered design practices. The project emphasized problem-solving, collaboration, and the creation of solutions based on real-world requirements. By working on this project, I gained valuable experience in digital product development, stakeholder collaboration, and turning ideas into practical solutions. It also strengthened my skills in web development, project management, and creating intuitive user experiences.",
+    githubLink: "https://github.com/marie-cha9ne/NorwegianSportTech.git",
   },
 ];
